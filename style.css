@@ -1,0 +1,71 @@
+/* Social Nav */
+.social-nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.social-nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.social-nav a:hover {
+    color: white;
+}
+
+/* Contact Form Styles */
+#contact {
+    padding: 80px 0;
+    background-color: #12161d;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent);
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background: var(--card-bg);
+    color: white;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent);
+    color: var(--dark-bg);
+}
