@@ -5,62 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Tetreault | Aerospace Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <nav class="social-nav">
+        <div class="container">
+            <a href="https://linkedin.com/in/your-profile" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
-            <h1>RYAN TETREAULT</h1>
-            <p class="subtitle">AEROSPACE ENGINEERING</p>
+            [cite_start]<h1>RYAN TETREAULT</h1> [cite: 1]
+            [cite_start]<p class="subtitle">AEROSPACE ENGINEERING</p> [cite: 2]
         </div>
     </header>
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">PROJECT HIGHLIGHTS</h2>
+            [cite_start]<h2 class="section-title">PROJECT HIGHLIGHTS</h2> [cite: 4]
 
             <div class="project-grid">
-                
                 <article class="project-card">
-                    <div class="project-image">
-                        <img src="jet-cfd.jpg" alt="Transonic Jet CFD Analysis">
-                    </div>
                     <div class="project-content">
-                        <h3>TRANSONIC BUSINESS JET PERFORMANCE</h3>
+                        [cite_start]<h3>TRANSONIC BUSINESS JET PERFORMANCE</h3> [cite: 3]
                         <div class="qa">
-                            <p><strong>What?</strong> Perform a comprehensive CFD analysis of a super-midsize jet at Mach 0.95 and 40,000 feet.</p>
-                            <p><strong>How?</strong> Symmetric model imported into Pointwise; T-rex grid generated to resolve leading edges. Simulation ran in Fluent to obtain performance characteristics.</p>
+                            [cite_start]<p><strong>What?</strong> Perform a comprehensive CFD analysis of a super-midsize jet at Mach 0.95 and 40,000 feet. [cite: 6, 7]</p>
+                            <p><strong>How?</strong> Symmetric model imported into Pointwise; [cite_start]T-rex grid generated to resolve leading edges. [cite: 9, 10] [cite_start]Simulation ran in Fluent to obtain performance characteristics. [cite: 11]</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
-                        <img src="cubesat.jpg" alt="GLADOS CubeSat Structural Stress">
-                    </div>
                     <div class="project-content">
-                        <h3>GLADOS CUBESAT</h3>
+                        [cite_start]<h3>GLADOS CUBESAT</h3> [cite: 8]
                         <div class="qa">
-                            <p><strong>What?</strong> Create a 3U CubeSat capable of cataloging Resident Space Objects in low earth orbit.</p>
-                            <p><strong>How?</strong> Created custom brackets and assembly drawings in CATIA/SolidWorks. Used ANSYS to verify structural load conditions during launch.</p>
+                            [cite_start]<p><strong>What?</strong> Create a 3U CubeSat capable of cataloging Resident Space Objects in low earth orbit. [cite: 29, 30]</p>
+                            [cite_start]<p><strong>How?</strong> Created custom brackets and assembly drawings in CATIA and SolidWorks. [cite: 31, 32] [cite_start]Used ANSYS to verify structural load conditions. [cite: 33]</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
-                        <img src="rocket-nozzle.jpg" alt="RD-180 Rocket Engine Performance">
-                    </div>
                     <div class="project-content">
-                        <h3>RD-180 ROCKET ENGINE NOZZLE PERFORMANCE</h3>
+                        [cite_start]<h3>RD-180 ROCKET ENGINE NOZZLE PERFORMANCE</h3> [cite: 34]
                         <div class="qa">
-                            <p><strong>What?</strong> Design an efficient axisymmetric grid of a rocket at Mach 4 and 100,000 feet for ascent and descent.</p>
-                            <p><strong>How?</strong> Approximated nozzle curve in Pointwise. Iterative runs in Fluent using grid adaptation to resolve shock boundaries.</p>
+                            [cite_start]<p><strong>What?</strong> Design an efficient axisymmetric grid of a rocket with an RD-180 engine at Mach 4 and 100,000 feet. [cite: 51, 52]</p>
+                            [cite_start]<p><strong>How?</strong> Approximated nozzle curve in Pointwise. [cite: 53, 54] [cite_start]Iterative runs in Fluent using grid adaptation to resolve shock boundaries. [cite: 55]</p>
                         </div>
                     </div>
                 </article>
-
             </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT ME</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
