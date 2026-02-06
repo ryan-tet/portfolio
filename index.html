@@ -3,89 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Tetreault | Aerospace Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Ryan Tetreault - Aerospace Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <nav class="social-nav">
-        <div class="container">
-            <a href="https://www.linkedin.com/in/ryan-tetreault/" target="_blank">
-                <i class="fab fa-linkedin"></i>LinkedIn
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-name-section">
+                <div class="header-name-content">
+                    <h1 class="header-title">RYAN TETREAULT</h1>
+                    <p class="header-subtitle">AEROSPACE ENGINEERING</p>
+                </div>
+            </div>
+            <div class="header-divider"></div>
+            <div class="header-project-section">
+                <div class="header-project-content">
+                    <h2 class="header-project-title">PROJECT</h2>
+                    <h2 class="header-project-title">HIGHLIGHTS</h2>
+                </div>
+            </div>
+            <div class="header-divider"></div>
+            <a href="https://www.linkedin.com/in/ryan-tetreault/" target="_blank" rel="noopener noreferrer" class="header-linkedin-section">
+                <img src="images/linkedin-logo.png" alt="LinkedIn" class="header-linkedin-logo">
             </a>
-        </div>
-    </nav>
-
-    <header>
-        <div class="container">
-            [cite_start]<h1>Ryan Tetreault</h1> [cite: 1]
-            [cite_start]<p class="subtitle">Aerospace Engineering</p> [cite: 2]
         </div>
     </header>
 
-    <section id="projects">
-        <div class="container">
-            [cite_start]<h2 class="section-title">PROJECT HIGHLIGHTS</h2> [cite: 4]
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Project 1: Transonic Business Jet Performance -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">Transonic Business Jet Performance</h2>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/jet-mesh.png" alt="Jet computational mesh grid" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/jet-mach.png" alt="Business jet CFD Mach number analysis" class="project-image">
+                </div>
+            </div>
 
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-content">
-                        [cite_start]<h3>TRANSONIC BUSINESS JET PERFORMANCE</h3> [cite: 3]
-                        <div class="qa">
-                            [cite_start]<p><strong>What?</strong> Perform a comprehensive CFD analysis of a super-midsize jet at Mach 0.95 and 40,000 feet. [cite: 6, 7]</p>
-                            <p><strong>How?</strong> Symmetric model imported into Pointwise; [cite_start]T-rex grid generated to resolve leading edges. [cite: 9, 10] [cite_start]Simulation ran in Fluent to obtain performance characteristics. [cite: 11]</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        [cite_start]<h3>GLADOS CUBESAT</h3> [cite: 8]
-                        <div class="qa">
-                            [cite_start]<p><strong>What?</strong>Create a 3U CubeSat capable of cataloging Resident Space Objects in low earth orbit. [cite: 29, 30]</p>
-                            [cite_start]<p><strong>How?</strong>Created custom brackets and assembly drawings in CATIA and SolidWorks. [cite: 31, 32] [cite_start]Used ANSYS to verify structural load conditions. [cite: 33]</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        [cite_start]<h3>RD-180 ROCKET ENGINE NOZZLE PERFORMANCE</h3> [cite: 34]
-                        <div class="qa">
-                            [cite_start]<p><strong>What?</strong>Design an efficient axisymmetric grid of a rocket with an RD-180 engine at Mach 4 and 100,000 feet. [cite: 51, 52]</p>
-                            [cite_start]<p><strong>How?</strong>Approximated nozzle curve in Pointwise. [cite: 53, 54] [cite_start]Iterative runs in Fluent using grid adaptation to resolve shock boundaries. [cite: 55]</p>
-                        </div>
-                    </div>
-                </article>
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Perform a comprehensive CFD analysis of a super-midsize business jet at Mach 0.95 and 40,000 feet</li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Symmetric model of jet imported into <strong>Pointwise</strong> with T-rex grid generated to resolve leading edges and boundary layers. Second order upwind simulation in <strong>Fluent</strong> to ontain steady-state performance characteristics. Post-processing performed in <strong>Tecplot</strong> for performance, streamline, shock, and boundary layer analysis.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">CONTACT ME</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+        <!-- Project 2: GLADOS CUBESAT -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">GLADOS CUBESAT</h2>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/cubesat-model.png" alt="CubeSat satellite" class="project-image">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="project-image-wrapper">
+                    <img src="images/cubesat-stress.png" alt="Thermal analysis" class="project-image">
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="project-image-wrapper">
+                    <img src="images/cubesat-drawing.png" alt="Engineering drawings" class="project-image">
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            </div>
+
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Create a 3U CubeSat capable of cataloguing Resident Space Objects in low earth orbit</li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Given mission specifications and supplier models, created custom brackets along with part and assembly drawings in <strong>CATIA</strong> and <strong>SolidWorks</strong> until design meets <strong>ANSYS</strong> structural load conditions during launch and deployment.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Ryan Tetreault</p>
+        <!-- Project 3: RD-180 Rocket Engine Nozzle Performance -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">RD-180 Rocket Engine Nozzle Performance</h2>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/rocket-mach.png" alt="Flow analysis" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/rocket-mesh1.png" alt="Rocket nozzle mesh" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/rocket-mesh2.png" alt="Pressure distribution" class="project-image">
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Design an efficient axisymmetric grid of a rocket with an RD-180 engine at Mach 4 and 100,000 feet for ascent and descent.</li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Approximated nozzle curve of RD-180 shell and generated grid in <strong>Pointwise</strong>. Iterative runs in <strong>Fluent</strong> using grid adaptation to resolve shock boundaries and inner engine. Exported to <strong>Tecplot</strong> for streamline and shock boundary analysis. Video of descent simulation linked <a href='https://www.youtube.com/watch?v=ELrBm2aoeIk' class='video-link' target='_blank' rel='noopener noreferrer'>here</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: REMOTE CONTROLLED HELICOPTER -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">REMOTE CONTROLLED HELICOPTER</h2>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/helicopter.png" alt="Remote controlled helicopter with engineering drawings" class="project-image">
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Reverse engineer and improve a remote controlled helicopter using modern engineering standards</li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Produced 3D CAD models and detailed 2D engineering drawings with GD&T using <strong>CATIA V5</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Ryan Tetreault</p>
+        </div>
     </footer>
-
 </body>
 </html>
