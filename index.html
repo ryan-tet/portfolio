@@ -31,24 +31,73 @@
         </div>
     </header>
 
+    <!-- Filter Section -->
+     <header class="filter">
+        <div class="filter-container">
+            <div class="filter-wrapper">
+                <span class="filter-label">Filter by Software:</span>
+                <button class="filter-btn active" data-filter="All">
+                    <span class="filter-name">All</span>
+                </button>
+                <button class="filter-btn" data-filter="DAE">
+                    <img src="images/DAE.png" alt="DAE" class="filter-logo">
+                    <span class="filter-name">DAE</span>
+                </button>
+                
+                <button class="filter-btn" data-filter="CATIA">
+                    <img src="images/CATIA.png" alt="CATIA" class="filter-logo">
+                    <span class="filter-name">CATIA</span>
+                </button>
+                <button class="filter-btn" data-filter="CATIA Composer">
+                    <img src="images/CATIAComposer.png" alt="CATIA Composer" class="filter-logo">
+                    <span class="filter-name">CATIA Composer</span>
+                </button>
+                <button class="filter-btn" data-filter="SolidWorks">
+                    <img src="images/SolidWorks.png" alt="SolidWorks" class="filter-logo">
+                    <span class="filter-name">SolidWorks</span>
+                </button>
+                <button class="filter-btn" data-filter="Pointwise">
+                    <img src="images/Pointwise.png" alt="Pointwise" class="filter-logo">
+                    <span class="filter-name">Pointwise</span>
+                </button>
+                <button class="filter-btn" data-filter="ANSYS">
+                    <img src="images/Ansys.png" alt="ANSYS" class="filter-logo">
+                    <span class="filter-name">ANSYS</span>
+                </button>
+                <button class="filter-btn" data-filter="Tecplot">
+                    <img src="images/Tecplot.png" alt="Tecplot" class="filter-logo">
+                    <span class="filter-name">Tecplot</span>
+                </button>
+                <button class="filter-btn" data-filter="MATLAB">
+                    <img src="images/MATLAB.png" alt="MATLAB" class="filter-logo">
+                    <span class="filter-name">MATLAB</span>
+                </button>
+            </div>
+        </div>
+    </header>
     <!-- Main Content -->
     <main class="main-content">
 
         <!-- Project 1: Future Factory with Augmented Reality -->
-        <div class="project-card">
+        <div class="project-card" data-software="CATIA CATIA Composer DAE">
             <div class="project-header">
                 <h2 class="project-title">Future Factory with Augmented Reality</h2>
+                <div class="logo-container">
+                    <img src="images/CATIA.png" alt="CATIA" class="software-logo">
+                    <img src="images/CATIAComposer.png" alt="CATIA Composer" class="software-logo">
+                    <img src="images/DAE.png" alt="DAE" class="software-logo">
+                </div>
             </div>
             
             <div class="project-images">
                 <div class="project-image-wrapper">
-                    <img src="images/AR_3.png" alt="Paint masking application" class="project-image-AR">
+                    <img src="images/AR_3.png" alt="Paint masking application" class="project-image">
                 </div>
                 <div class="project-image-wrapper">
-                    <img src="images/AR_2.png" alt="Live tablet feed of AR scan" class="project-image-AR">
+                    <img src="images/AR_2.png" alt="Live tablet feed of AR scan" class="project-image">
                 </div>
                 <div class="project-image-wrapper">
-                    <img src="images/AR_1.png" alt="Scanning aircraft using tablet" class="project-image-AR">
+                    <img src="images/AR_1.png" alt="Scanning aircraft using tablet" class="project-image">
                 </div>
             </div>
 
@@ -62,17 +111,21 @@
                 <div class="project-detail-section">
                     <h3 class="project-detail-title">How?</h3>
                     <ul class="project-list">
-                        <li>Built using <strong>DELMIA Augmented Experience</strong>, graphic work instructions are displayed as a digital twin in real-time to operators and inspectors. Streamlined expansion using <strong>CATIA</strong> and <strong>CATIA Composer</strong> while building custom compliance and conformity software. Generated reports pushed into MES for full build record accountability.</li>
-
+                        <li>Built using <strong>DELMIA Augmented Experience</strong>, graphic work instructions are displayed as a digital twin in real-time to operators and inspectors. Streamlined expansion using <strong>CATIA</strong> and <strong>CATIA Composer</strong> while building custom compliance and conformity software. Generated reports pushed into MES for full build record accountability</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Project 2: Transonic Business Jet Performance -->
-        <div class="project-card">
+        <div class="project-card" data-software="ANSYS Pointwise Tecplot">
             <div class="project-header">
                 <h2 class="project-title">Transonic Business Jet Performance</h2>
+                <div class="logo-container">
+                    <img src="images/Pointwise.png" alt="Pointwise" class="software-logo">
+                    <img src="images/Ansys.png" alt="ANSYS" class="software-logo">
+                    <img src="images/Tecplot.png" alt="Tecplot" class="software-logo">
+                </div>
             </div>
             
             <div class="project-images">
@@ -94,16 +147,21 @@
                 <div class="project-detail-section">
                     <h3 class="project-detail-title">How?</h3>
                     <ul class="project-list">
-                        <li>Symmetric model of jet imported into <strong>Pointwise</strong> with T-rex grid generated to resolve leading edges and boundary layers. Second order upwind simulation in <strong>Fluent</strong> to ontain steady-state performance characteristics. Post-processing performed in <strong>Tecplot</strong> for performance, streamline, shock, and boundary layer analysis.</li>
+                        <li>Symmetric model of jet imported into <strong>Pointwise</strong> with T-rex grid generated to resolve leading edges and boundary layers. Second order upwind simulation in <strong>ANSYS Fluent</strong> to ontain steady-state performance characteristics. Post-processing performed in <strong>Tecplot</strong> for performance, streamline, shock, and boundary layer analysis</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Project 3: GLADOS Cubesat -->
-        <div class="project-card">
+        <div class="project-card" data-software="CATIA ANSYS SolidWorks">
             <div class="project-header">
                 <h2 class="project-title">GLADOS CUBESAT</h2>
+                <div class="logo-container">
+                    <img src="images/CATIA.png" alt="CATIA" class="software-logo">
+                    <img src="images/Ansys.png" alt="ANSYS" class="software-logo">
+                    <img src="images/SolidWorks.png" alt="SolidWorks" class="software-logo">
+                </div>
             </div>
             
             <div class="project-images">
@@ -128,16 +186,21 @@
                 <div class="project-detail-section">
                     <h3 class="project-detail-title">How?</h3>
                     <ul class="project-list">
-                        <li>Given mission specifications and supplier models, created custom brackets along with part and assembly drawings in <strong>CATIA</strong> and <strong>SolidWorks</strong> until design meets <strong>ANSYS</strong> structural load conditions during launch and deployment.</li>
+                        <li>Given mission specifications and supplier models, created custom brackets along with part and assembly drawings in <strong>CATIA</strong> and <strong>SolidWorks</strong> until design meets <strong>ANSYS FEA</strong> structural load conditions during launch and deployment</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Project 4: RD-180 Rocket Engine Nozzle Performance -->
-        <div class="project-card">
+        <div class="project-card" data-software="ANSYS Pointwise Tecplot">
             <div class="project-header">
                 <h2 class="project-title">RD-180 Rocket Engine Nozzle Performance</h2>
+                <div class="logo-container">
+                    <img src="images/Pointwise.png" alt="Pointwise" class="software-logo">
+                    <img src="images/Ansys.png" alt="ANSYS" class="software-logo">
+                    <img src="images/Tecplot.png" alt="Tecplot" class="software-logo">
+                </div>
             </div>
             
             <div class="project-images">
@@ -162,16 +225,19 @@
                 <div class="project-detail-section">
                     <h3 class="project-detail-title">How?</h3>
                     <ul class="project-list">
-                        <li>Approximated nozzle curve of RD-180 shell and generated grid in <strong>Pointwise</strong>. Iterative runs in <strong>Fluent</strong> using grid adaptation to resolve shock boundaries and inner engine. Exported to <strong>Tecplot</strong> for streamline and shock boundary analysis. Video of descent simulation linked <a href='https://www.youtube.com/watch?v=ELrBm2aoeIk' class='video-link' target='_blank' rel='noopener noreferrer'>here</a>.</li>
+                        <li>Approximated nozzle curve of RD-180 shell and generated grid in <strong>Pointwise</strong>. Iterative runs in <strong>ANSYS Fluent</strong> using grid adaptation to resolve shock boundaries and inner engine. Exported to <strong>Tecplot</strong> for streamline and shock boundary analysis. Video of descent simulation linked <a href='https://www.youtube.com/watch?v=ELrBm2aoeIk' class='video-link' target='_blank' rel='noopener noreferrer'>here</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Project 5: Remote Controlled Helicopter -->
-        <div class="project-card">
+        <div class="project-card" data-software="CATIA">
             <div class="project-header">
                 <h2 class="project-title">REMOTE CONTROLLED HELICOPTER</h2>
+                <div class="logo-container">
+                    <img src="images/CATIA.png" alt="CATIA" class="software-logo">
+                </div>
             </div>
             
             <div class="project-images">
@@ -190,7 +256,70 @@
                 <div class="project-detail-section">
                     <h3 class="project-detail-title">How?</h3>
                     <ul class="project-list">
-                        <li>Produced 3D CAD models and detailed 2D engineering drawings with GD&T using <strong>CATIA</strong>. Designed full assembly documents and kinematic simulations on helicopter components. Decreased unique item count by 5% by duplicating existing parts.</li>
+                        <li>Produced 3D CAD models and detailed 2D engineering drawings using <strong>CATIA</strong>. Designed full assembly documents and kinematic simulations on helicopter components. Decreased unique item count by 5% by duplicating existing parts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <!-- Project 6: Satellite Astrodynamics Involving J2 Perturbations -->
+        <div class="project-card" data-software="MATLAB">
+            <div class="project-header">
+                <h2 class="project-title">SATELLITE ASTRODYNAMICS INVOLVING J2 PERTURBATIONS</h2>
+                <div class="logo-container">
+                    <img src="images/MATLAB.png" alt="MATLAB" class="software-logo">
+                </div>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/J2.png" alt="Satellite astrodynamics involving J2 perturbations" class="project-image">
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Research and depict a visual representation how the oblateness of the Earth influences the orbital properties of the satellite</li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Utilizing ODE45 and inital conditions, the differential equations of the satellite are integrated to show the rotation of the orbital plane over a month. Using <strong>MATLAB</strong>, at each time step the position and velocity vectors of both scenarios are compared to show the relative shift of the satellite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                   <!-- Project 7: Numerical Methods for Airfoil Analysis -->
+        <div class="project-card" data-software="MATLAB">
+            <div class="project-header">
+                <h2 class="project-title">NUMERICAL METHODS FOR AIRFOIL ANALYSIS</h2>
+                <div class="logo-container">
+                    <img src="images/MATLAB.png" alt="MATLAB" class="software-logo">
+                </div>
+            </div>
+            
+            <div class="project-images">
+                <div class="project-image-wrapper">
+                    <img src="images/Mach.png" alt="Mach number across airfoil" class="project-image">
+                    <img src="images/Cp.png" alt="Pressure coefficient across airfoil" class="project-image">
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">What?</h3>
+                    <ul class="project-list">
+                        <li>Second order in space discretization of the linear potential flow equation of any symmetric airfoil in a compressible flow field using <strong>MATLAB</strong></li>
+                    </ul>
+                </div>
+                <div class="project-detail-section">
+                    <h3 class="project-detail-title">How?</h3>
+                    <ul class="project-list">
+                        <li>Utilizing Gauss-Sidell iterations for all internal points, Newmann for j=1, Dirichlet for all other boundary conditions, the governing equations of the airfoil are integrated to showing Mach contours and pressure coefficient across the airfoil surface and beyond. Environment ran to steady-state using residual convergence criteria</li>
                     </ul>
                 </div>
             </div>
@@ -201,8 +330,11 @@
     <footer class="footer">
         <div class="footer-content">
             <p>Augmented Reality imagery rights belong to Dassault Systèmes - Imagery publically available</p>
+            <p>All software icons rights are property of their respective owners</p>
             <p>© 2026 Ryan Tetreault - All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
