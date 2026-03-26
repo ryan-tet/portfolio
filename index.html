@@ -39,18 +39,9 @@
                 <button class="filter-btn active" data-filter="All">
                     <span class="filter-name">All</span>
                 </button>
-                <button class="filter-btn" data-filter="DAE">
-                    <img src="images/DAE.png" alt="DAE" class="filter-logo">
-                    <span class="filter-name">DAE</span>
-                </button>
-                
-                <button class="filter-btn" data-filter="CATIA">
-                    <img src="images/CATIA.png" alt="CATIA" class="filter-logo">
-                    <span class="filter-name">CATIA</span>
-                </button>
-                <button class="filter-btn" data-filter="CATIA Composer">
-                    <img src="images/CATIAComposer.png" alt="CATIA Composer" class="filter-logo">
-                    <span class="filter-name">CATIA Composer</span>
+                <button class="filter-btn" data-filter="MATLAB">
+                    <img src="images/MATLAB.png" alt="MATLAB" class="filter-logo">
+                    <span class="filter-name">MATLAB</span>
                 </button>
                 <button class="filter-btn" data-filter="SolidWorks">
                     <img src="images/Solidworks.png" alt="SolidWorks" class="filter-logo">
@@ -68,10 +59,65 @@
                     <img src="images/Tecplot.png" alt="Tecplot" class="filter-logo">
                     <span class="filter-name">Tecplot</span>
                 </button>
-                <button class="filter-btn" data-filter="MATLAB">
-                    <img src="images/MATLAB.png" alt="MATLAB" class="filter-logo">
-                    <span class="filter-name">MATLAB</span>
+                <button class="filter-btn" data-filter="CATIA">
+                    <img src="images/CATIA.png" alt="CATIA" class="filter-logo">
+                    <span class="filter-name">CATIA</span>
                 </button>
+                <button class="filter-btn" data-filter="CATIA Composer">
+                    <img src="images/CATIAComposer.png" alt="CATIA Composer" class="filter-logo">
+                    <span class="filter-name">CATIA Composer</span>
+                </button>
+                <button class="filter-btn" data-filter="DAE">
+                    <img src="images/DAE.png" alt="DAE" class="filter-logo">
+                    <span class="filter-name">DAE</span>
+                </button>
+            </div>
+            <!-- Custom dropdown for mobile -->
+            <div class="filter-dropdown-wrapper">
+                <button class="filter-dropdown-toggle" id="filterDropdownToggle">
+                    <span class="filter-dropdown-label">Filter by Software:</span>
+                    <div class="filter-dropdown-selected">
+                        <img id="filterDropdownSelectedLogo" src="" alt="" class="filter-logo" style="display: none;">
+                        <span id="filterDropdownSelectedText">All</span>
+                    </div>
+                </button>
+                <div class="filter-dropdown-menu" id="filterDropdownMenu">
+                    <button class="filter-dropdown-item active" data-filter="All">
+                        <span class="filter-name">All</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="MATLAB">
+                        <img src="images/MATLAB.png" alt="MATLAB" class="filter-logo">
+                        <span class="filter-name">MATLAB</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="SolidWorks">
+                        <img src="images/Solidworks.png" alt="SolidWorks" class="filter-logo">
+                        <span class="filter-name">SolidWorks</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="Pointwise">
+                        <img src="images/Pointwise.png" alt="Pointwise" class="filter-logo">
+                        <span class="filter-name">Pointwise</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="ANSYS">
+                        <img src="images/Ansys.png" alt="ANSYS" class="filter-logo">
+                        <span class="filter-name">ANSYS</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="Tecplot">
+                        <img src="images/Tecplot.png" alt="Tecplot" class="filter-logo">
+                        <span class="filter-name">Tecplot</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="CATIA">
+                        <img src="images/CATIA.png" alt="CATIA" class="filter-logo">
+                        <span class="filter-name">CATIA</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="CATIA Composer">
+                        <img src="images/CATIAComposer.png" alt="CATIA Composer" class="filter-logo">
+                        <span class="filter-name">CATIA Composer</span>
+                    </button>
+                    <button class="filter-dropdown-item" data-filter="DAE">
+                        <img src="images/DAE.png" alt="DAE" class="filter-logo">
+                        <span class="filter-name">DAE</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -242,7 +288,13 @@
             
             <div class="project-images">
                 <div class="project-image-wrapper">
-                    <img src="images/helicopter.png" alt="Remote controlled helicopter with engineering drawings" class="project-image">
+                    <img src="images/heli1.png" alt="Remote controlled helicopter with engineering drawings" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/heli2.png" alt="Remote controlled helicopter with engineering drawings" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/heli3.png" alt="Remote controlled helicopter with engineering drawings" class="project-image">
                 </div>
             </div>
 
@@ -273,7 +325,13 @@
             
             <div class="project-images">
                 <div class="project-image-wrapper">
-                    <img src="images/J2.png" alt="Satellite astrodynamics involving J2 perturbations" class="project-image">
+                    <img src="images/J2_1.png" alt="Satellite astrodynamics involving J2 perturbations" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/J2_2.png" alt="Satellite astrodynamics involving J2 perturbations" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/J2_3.png" alt="Satellite astrodynamics involving J2 perturbations" class="project-image">
                 </div>
             </div>
 
@@ -305,6 +363,8 @@
             <div class="project-images">
                 <div class="project-image-wrapper">
                     <img src="images/Mach.png" alt="Mach number across airfoil" class="project-image">
+                </div>
+                <div class="project-image-wrapper">
                     <img src="images/Cp.png" alt="Pressure coefficient across airfoil" class="project-image">
                 </div>
             </div>
@@ -329,7 +389,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>Augmented Reality imagery rights belong to Dassault Systèmes - Imagery publically available</p>
+            <p>Augmented Reality imagery rights belong to Dassault Systèmes - Imagery publicly available</p>
             <p>All software icons rights are property of their respective owners</p>
             <p>© 2026 Ryan Tetreault - All Rights Reserved</p>
         </div>
