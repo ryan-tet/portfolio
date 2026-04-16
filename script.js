@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'Pointwise': 'images/Pointwise.png',
         'ANSYS': 'images/Ansys.png',
         'Tecplot': 'images/Tecplot.png',
-        'MATLAB': 'images/MATLAB.png'
+        'MATLAB': 'images/MATLAB.png',
+        'Simulink': 'images/Simulink.png'
     };
 
     // Desktop filter buttons
